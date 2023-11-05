@@ -13,7 +13,8 @@ async def hello_world():
 
 @app.get("/analysis")
 async def sentiment_analysis(query: str):
-    return {"message": query}
+    result = sentiment_pipeline(query)
+    return {"result": result}
 
 
 if __name__ == '__main__':

@@ -3,6 +3,8 @@ Deploy AI Models
 
 ## Install requirements
 
+### Clone Postman Collection
+
 ## Example 1
 [http://localhost:8000/](http://localhost:8000/)
 
