@@ -3,9 +3,15 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import StreamingResponse
 from transformers import pipeline
+import torch
+from torch import autocast
+from diffusers import StableDiffusionPipeline
 
 app = FastAPI()
-sentiment_pipeline = pipeline("sentiment-analysis")
+model_id = "CompVis/stable-diffusion-v1-1"
+device = "cuda"
+pipe = StableDiffusionPipeline.from_pretrained(model_id)
+pipe = pipe.to(device)
 
 
 @app.get("/")
@@ -19,8 +25,13 @@ async def sentiment_analysis(query: str):
 
 
 @app.get("/generate")
-async def generate_image(query: str):
-    return {"message": query}
+async def generate_image(prompt: str):
+    return {"prompt": prompt}
+    # prompt = "a photo of an astronaut riding a horse on mars"
+    # with autocast("cuda"):
+    #     image = pipe(prompt)["sample"][0]
+    #
+    # image.save("astronaut_rides_horse.png")
     # image = await _services.generate_image(imgPrompt=query)
     #
     # memory_stream = io.BytesIO()
