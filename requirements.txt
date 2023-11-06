@@ -1,6 +1,3 @@
 fastapi
 uvicorn
 transformers
-diffusers
-scipy
-torch
