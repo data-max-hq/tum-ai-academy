@@ -2,7 +2,7 @@
 Deploy AI Models - Making AI models accessible to users.
 
 ## How-to
-To get started with making ML applications reachable to users.
+To get started with making ML applications reachable to users:
 
 ### Step 1: Clone this repo
 
@@ -10,7 +10,7 @@ To get started with making ML applications reachable to users.
 2. Copy the link from `HTTPS`
 3. Open your IDE
 4. Start a new repo from VCS
-5. Paste the link copies in Step 2
+5. Paste the link copied in Step 2
 
 ### Step 2: Install Requirements
 
@@ -31,7 +31,6 @@ For terminal users:
 ```commandline
 pip install -r requirements.txt
 ```
-
 
 ### Step 3: Run `hello-world`
 
