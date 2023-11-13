@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from transformers import pipeline
 
 app = FastAPI()
+# https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 sentiment_pipeline = pipeline(
     "text-classification",
     model="distilbert-base-uncased-finetuned-sst-2-english"
