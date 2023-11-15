@@ -18,14 +18,14 @@ For `PyCharm`/`IntelliJ` users:
 1. On the lower left-hand side, click `Python Packages`
 2. Search for `fastapi`
 3. On the right-hand side, click `Install package`
-4. Repeat Steps 2 and 3 for `uvicorn` and `transformers`
+4. Repeat Steps 2 and 3 for `uvicorn`, `torch` and `transformers`
 
 For `VSCode` users:
 1. Go to `Python` on the left-hand side
 2. At `Workspace Environment`, go to `Packages`
 3. Click on the search icon
 4. Search for `fastapi` and click on the first item
-5. Repeat Step 4 for `uvicorn` and `transformers`
+5. Repeat Step 4 for `uvicorn`, `torch` and `transformers`
 
 For terminal users:
 ```commandline
