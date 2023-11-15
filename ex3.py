@@ -4,7 +4,11 @@ from transformers import pipeline
 
 app = FastAPI()
 # https://huggingface.co/google/flan-t5-small
-flan_t5 = pipeline("text2text-generation", model="google/flan-t5-small")
+flan_t5 = pipeline(
+    "text2text-generation",
+    model="google/flan-t5-small",
+    revision="0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+)
 
 
 @app.get("/")

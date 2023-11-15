@@ -6,7 +6,8 @@ app = FastAPI()
 # https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 sentiment_pipeline = pipeline(
     "text-classification",
-    model="distilbert-base-uncased-finetuned-sst-2-english"
+    model="distilbert-base-uncased-finetuned-sst-2-english",
+    revision="4643665f84c6760e3cbf6adaace6c398592270af"
 )
 
 

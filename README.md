@@ -49,3 +49,8 @@ pip install -r requirements.txt
 1. Open `ex3.py`
 2. Right-click and go to `Run ex3.py`
 3. Follow this link: [http://localhost:8000/generate?prompt=translate English to German That is good](http://localhost:8000/generate?prompt=translate%20English%20to%20German%20That%20is%20good)
+
+### Step 6: Clean Up
+
+1. Open `cleanup.py`
+2. Right-click and go to `Run cleanup.py`
