@@ -54,3 +54,5 @@ pip install -r requirements.txt
 
 1. Open `cleanup.py`
 2. Right-click and go to `Run cleanup.py`
+
+Made with ❤️ by [datamax.ai](https://www.datamax.ai/).
